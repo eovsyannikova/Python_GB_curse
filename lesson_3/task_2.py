@@ -7,11 +7,13 @@ def user_param(first_name, last_name, **kwargs):
     text = ""
     personal_dict['first_name'] = first_name
     personal_dict['last_name'] = last_name
+
     for param, val in kwargs.items():
         personal_dict[param] = val
 
     for key, value in personal_dict.items():
         text += "{0} - {1}; ".format(key, value)
+
     return text
 
 
