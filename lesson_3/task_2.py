@@ -17,14 +17,14 @@ def user_param(first_name, last_name, **kwargs):
     return text
 
 
-a = user_param(
+result = user_param(
     # Обязательные именнованные параметры
-    first_name=str(input('Введите имя: ')),
-    last_name=str(input('Введите фамилию: ')),
+    first_name=input('Введите имя: '),
+    last_name=input('Введите фамилию: '),
     # Необязательные именнованные параметры
-    year=(int(input('Введите год: '))),
-    city=str(input('Введите город: ')),
-    email=str(input('Введите email: ')),
-    phone=str(input('Введите номер: ')))
+    year=input('Введите год: '),
+    city=input('Введите город: '),
+    email=input('Введите email: '),
+    phone=input('Введите номер: '))
 
-print(a)
+print(result)
