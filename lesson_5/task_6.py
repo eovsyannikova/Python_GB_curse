@@ -5,6 +5,7 @@ print(path)
 lesson_dict = {}
 try:
     with open(path, "r", encoding='utf-8') as file_in:
+        print('Файл открыт для чтения')
         # Перебираем строки
         for line in file_in.readlines():
             # Разделяем ключи и значение

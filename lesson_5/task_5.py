@@ -7,9 +7,11 @@ print(path)
 num_list = []
 try:
     with open(path, "w", encoding='utf-8') as file_out:
+        print('Файл открыт на запись')
         str_out = input('Введите числа через пробел: ')
         file_out.write(str_out)
     with open(path, "r", encoding='utf-8') as file_in:
+        print('Файл открыт для чтения')
         num_list = [float(word) for line in file_in.readlines() for word in line.split()]
 
     print(f"Сумма чисел в файле {path} : {sum(num_list)}")

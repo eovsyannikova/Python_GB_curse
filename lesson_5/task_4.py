@@ -27,6 +27,8 @@ try:
             key_out = rus_dict[key]
             out_dict[key_out] = value
         print('Данные преобразованы')
+    # Решила разделить все таки открытие и запись в файлы, можно было на предыдущем шаге сделать,
+    # через дозапись каждой строки в режиме "а"
     with open(path_out, "w", encoding='cp1251') as file_out:
         for key, value in out_dict.items():
             file_out.write('{} — {}'.format(key, value))
