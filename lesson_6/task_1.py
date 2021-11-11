@@ -4,13 +4,13 @@ import sys
 
 class TrafficLight:
     __color = ""
+    __checklist = ["Красный", "Желтый", "Зеленый"]
 
     def check(self, cheklist):
-        self.checklist = ["Красный", "Желтый", "Зеленый"]
-        return self.checklist == cheklist
-
+        return TrafficLight.__checklist == cheklist
 
     def RunTraffic(self):
+        # Создаем список контроля цветов
         checklist = []
         __color = "Красный"
         checklist.append(__color)
@@ -24,7 +24,9 @@ class TrafficLight:
         checklist.append(__color)
         print(__color)
         time.sleep(5)
+        # Возвращаем список выведенных цветов светофора
         return checklist
+
 
 a = TrafficLight()
 try:
@@ -36,4 +38,3 @@ try:
             break
 except KeyboardInterrupt:
     print("Программа остановлена!")
-
