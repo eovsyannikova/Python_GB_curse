@@ -19,7 +19,7 @@ my_list_2 = [[13, 15, 132], [12, 14, 16], [-11, 164, -18]]
 a = Matrix(my_list_1)
 b = Matrix(my_list_2)
 
-print(a)
+
 print(a + b)
 
 
