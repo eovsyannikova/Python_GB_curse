@@ -6,8 +6,7 @@ class Matrix:
         self.matrix_list = matrix
 
     def __add__(self, other):
-        new_list = Matrix([[x + y for x, y in zip(i, j)] for i, j in zip(self.matrix_list, other.matrix_list)])
-        return new_list
+        return Matrix([[x + y for x, y in zip(i, j)] for i, j in zip(self.matrix_list, other.matrix_list)])
 
     def __str__(self):
         return '\n'.join(map(str, self.matrix_list))
